@@ -1,0 +1,73 @@
+body {
+    background-color: #37B7C3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ensure no extra margin around the body */
+    padding-top: 40px; /* Add padding to create space at the top */
+}
+
+.registration-container {
+    /* background-color: Gray94; */
+    background-color: #088395;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 20px; /* Add margin to ensure space on both sides */
+}
+
+.registration-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-container input,
+.registration-container textarea {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.registration-container textarea {
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-btn {
+    background-color: #071952;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 95%; Ensure equal width with space between buttons */
+}
+
+
+.register-btn:hover {
+    background: #04437C;
+    transition-duration: 0.3s;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirLine Management System</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="nav-link" id="homeLink">Home</a>
+            <a href="#" class="nav-link" id="profileLink">My Profile</a>
+            <a href="#" class="nav-link" id="tripsLink">My Trips</a>
+        </div>
+        <div class="nav-right">
+            <span class="welcome-msg">Welcome, <span id="passengerName">Passenger Name</span> !!!</span>
+            <a href="index.html" class="nav-link" id="logoutLink">Logout</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>AirLine Management System</h1>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Search for Flights</h2>
+            <form id="searchForm" action="#" method="GET">
+                <label for="origin">Origin:</label>
+                <select id="origin" name="origin">
+                    <option value="NYC">New York City</option>
+                    <option value="LAX">Los Angeles</option>
+                    <option value="CHI">Chicago</option>
+                </select>
+
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination">
+                    <option value="SFO">San Francisco</option>
+                    <option value="MIA">Miami</option>
+                    <option value="SEA">Seattle</option>
+                </select>
+
+                <label for="departure">Departure:</label>
+                <input type="date" id="departure" name="departure" required>
+
+                <label for="travellers">No of Travellers:</label>
+                <input type="number" id="travellers" name="travellers" min="1" max="10" required>
+
+                <label for="class">Class:</label>
+                <select id="class" name="class">
+                    <option value="Economy">Economy</option>
+                    <option value="Executive">Executive</option>
+                    <option value="Business">Business</option>
+                </select>
+
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="home.js"></script>
+</body>
+</html>
